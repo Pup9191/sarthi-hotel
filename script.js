@@ -44,18 +44,33 @@ document.addEventListener('DOMContentLoaded', () => {
     const formatPrice = (price) => `₹${price}`;
 
     const createMenuItemCard = (item) => {
-        const badge = `<div class="bg-primary/10 text-primary text-[10px] px-2 py-0.5 rounded inline-block mt-1 uppercase font-bold tracking-widest">${item.category}</div>`;
+        const isSpecial = item.name === 'Sarthi Special Veg';
+        const badge = isSpecial 
+            ? `<div class="bg-white/30 text-white text-[10px] px-2 py-0.5 rounded inline-block mt-1 uppercase font-bold tracking-widest">★ Sarthi Signature</div>`
+            : `<div class="bg-primary/10 text-primary text-[10px] px-2 py-0.5 rounded inline-block mt-1 uppercase font-bold tracking-widest">${item.category}</div>`;
+
+        const cardClass = isSpecial 
+            ? 'bg-gradient-to-br from-[#735c00] to-[#d4af37] p-3 rounded-2xl flex items-center gap-4 group hover:shadow-xl transition-all duration-300 border border-[#d4af37]/50 shadow-lg ring-2 ring-[#d4af37]/30'
+            : 'bg-surface-container-lowest p-3 rounded-2xl flex items-center gap-4 group hover:bg-surface-container transition-colors duration-300 border border-outline-variant/10 shadow-sm';
+
+        const nameClass = isSpecial 
+            ? 'font-noto-serif text-lg font-bold text-white'
+            : 'font-noto-serif text-lg font-bold';
+
+        const priceClass = isSpecial 
+            ? 'font-noto-serif text-xl font-bold text-white whitespace-nowrap pr-2'
+            : 'font-noto-serif text-xl font-bold text-primary whitespace-nowrap pr-2';
 
         return `
-            <div class="bg-surface-container-lowest p-3 rounded-2xl flex items-center gap-4 group hover:bg-surface-container transition-colors duration-300 border border-outline-variant/10 shadow-sm">
-                <div class="w-20 h-20 shrink-0 rounded-xl overflow-hidden bg-surface-variant shadow-inner">
+            <div class="${cardClass}">
+                <div class="w-20 h-20 shrink-0 rounded-xl overflow-hidden bg-surface-variant shadow-inner ${isSpecial ? 'ring-2 ring-white/40' : ''}">
                     <img src="./assets/${item.name}.jpg" onerror="this.onerror=null; this.src='./assets/default-dish.png';" alt="${item.name}" class="w-full h-full object-cover"/>
                 </div>
                 <div class="flex-grow">
-                    <p class="font-noto-serif text-lg font-bold">${item.name}</p>
+                    <p class="${nameClass}">${item.name}</p>
                     ${badge}
                 </div>
-                <p class="font-noto-serif text-xl font-bold text-primary whitespace-nowrap pr-2">${formatPrice(item.price)}</p>
+                <p class="${priceClass}">${formatPrice(item.price)}</p>
             </div>
         `;
     };
@@ -74,6 +89,12 @@ document.addEventListener('DOMContentLoaded', () => {
             if(noResults) noResults.classList.remove('hidden');
         } else {
             if(noResults) noResults.classList.add('hidden');
+            // Always put Sarthi Special Veg first
+            filteredData.sort((a, b) => {
+                if (a.name === 'Sarthi Special Veg') return -1;
+                if (b.name === 'Sarthi Special Veg') return 1;
+                return 0;
+            });
             menuContainer.innerHTML = filteredData.map(createMenuItemCard).join('');
         }
     };
