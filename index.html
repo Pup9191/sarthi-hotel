@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sarthi Hotel | Authentic Maharashtrian Taste</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Manrope:wght@300;400;600;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "surface": "#fefccf",
+                        "on-secondary-fixed": "#2b1613",
+                        "surface-container-high": "#eceabe",
+                        "error-container": "#ffdad6",
+                        "surface-tint": "#735c00",
+                        "on-tertiary-fixed": "#00174b",
+                        "on-primary-fixed": "#241a00",
+                        "on-primary": "#ffffff",
+                        "inverse-primary": "#e9c349",
+                        "tertiary-fixed-dim": "#b4c5ff",
+                        "primary-fixed": "#ffe088",
+                        "on-primary-container": "#554300",
+                        "tertiary-fixed": "#dbe1ff",
+                        "secondary-container": "#fed7d0",
+                        "on-secondary": "#ffffff",
+                        "secondary-fixed": "#ffdad4",
+                        "on-background": "#1d1d03",
+                        "surface-variant": "#e6e5b9",
+                        "on-secondary-container": "#795c57",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed-dim": "#e9c349",
+                        "on-error": "#ffffff",
+                        "outline-variant": "#d0c5af",
+                        "surface-container-highest": "#e6e5b9",
+                        "secondary-fixed-dim": "#e3beb8",
+                        "on-secondary-fixed-variant": "#5b403c",
+                        "surface-container-low": "#f8f6c9",
+                        "on-error-container": "#93000a",
+                        "tertiary-container": "#97b0ff",
+                        "surface-dim": "#dedcb1",
+                        "on-surface": "#1d1d03",
+                        "inverse-on-surface": "#f5f3c7",
+                        "inverse-surface": "#323214",
+                        "on-tertiary-fixed-variant": "#27438a",
+                        "surface-container": "#f2f0c4",
+                        "surface-bright": "#fefccf",
+                        "on-tertiary-container": "#254188",
+                        "surface-container-lowest": "#ffffff",
+                        "secondary": "#745853",
+                        "primary": "#735c00",
+                        "error": "#ba1a1a",
+                        "on-surface-variant": "#4d4635",
+                        "outline": "#7f7663",
+                        "primary-container": "#d4af37",
+                        "on-primary-fixed-variant": "#574500",
+                        "background": "#fefccf",
+                        "tertiary": "#415ba4"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "2xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { font-family: 'Manrope', sans-serif; background-color: #fefccf; color: #1d1d03; }
+        .font-noto-serif { font-family: 'Noto Serif', serif; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Sarthi Hotel",
+      "image": "https://lh3.googleusercontent.com/aida-public/AB6AXuCnoY7eefX6dp0dA-lt5S2NQAJwd93SdgaQlaziYkB4nLMmWGRAHjzIngoETvjJ4yuKAvjZ9pLnYaGlRxM1_2aHdwWygJY-jp33OuUY-sncCZt2rNxdlnS-aOswERQdv7zsj82lo3i4xhwJ41dXY2etavxcaA6LtUR2FGuZ3a5pnUKbAaed95cV3wBtLNc80o4fik_tqYsnPJiE-DtQD2ui-8gCBXxuaV6YALlrarzAA_IpxmskLeLcT_lnJ_gFEgIVNVU7ppniiH4",
+      "description": "Authentic Maharashtrian Taste",
+      "servesCuisine": ["Maharashtrian", "Jain", "Indian"],
+      "telephone": "+919876543210",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "42 Heritage Lane, Near Old Fort",
+        "addressLocality": "Pune",
+        "addressRegion": "MH",
+        "postalCode": "411001",
+        "addressCountry": "IN"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "11:00",
+          "closes": "15:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+          "opens": "19:00",
+          "closes": "23:00"
+        }
+      ]
+    }
+    </script>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopAppBar -->
+<header class="fixed top-0 w-full z-50 bg-[#fefccf]/70 dark:bg-stone-900/70 backdrop-blur-3xl shadow-[0px_20px_40px_rgba(29,29,3,0.04)]">
+<div class="flex justify-between items-center px-6 h-16 w-full">
+<div class="flex items-center gap-3 cursor-pointer" id="mobile-menu-btn">
+<span class="material-symbols-outlined text-[#735c00]">menu</span>
+<span class="font-noto-serif text-2xl italic font-bold text-[#735c00]">Sarthi Hotel</span>
+</div>
+<div class="w-10 h-10 rounded-full bg-[#f8f6c9] overflow-hidden">
+<img alt="Logo" class="w-full h-full object-cover" data-alt="Intricate golden heritage mandala pattern on a warm cream circular background representing luxury Maharashtrian tradition" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCnoY7eefX6dp0dA-lt5S2NQAJwd93SdgaQlaziYkB4nLMmWGRAHjzIngoETvjJ4yuKAvjZ9pLnYaGlRxM1_2aHdwWygJY-jp33OuUY-sncCZt2rNxdlnS-aOswERQdv7zsj82lo3i4xhwJ41dXY2etavxcaA6LtUR2FGuZ3a5pnUKbAaed95cV3wBtLNc80o4fik_tqYsnPJiE-DtQD2ui-8gCBXxuaV6YALlrarzAA_IpxmskLeLcT_lnJ_gFEgIVNVU7ppniiH4"/>
+</div>
+</div>
+</header>
+<main class="pt-16 pb-24">
+<!-- Hero Section -->
+<section class="relative h-[707px] flex items-center justify-center overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-surface z-10"></div>
+<img alt="Sarthi Hotel Hero Background" class="absolute inset-0 w-full h-full object-cover" src="./assets/hero-bg.jpg"/>
+<div id="main-status-indicator" class="absolute top-24 right-6 z-30 inline-flex items-center gap-2 bg-primary-container text-on-primary-container px-4 py-1 rounded-full text-sm font-bold tracking-widest uppercase transition-colors shadow-lg">
+<span id="status-dot-inner" class="w-2 h-2 bg-green-500 rounded-full animate-pulse transition-colors"></span>
+    <span id="main-status-text">Determining Status...</span>
+</div>
+<div class="relative z-20 text-center px-6">
+<h1 class="font-noto-serif md:text-8xl font-black text-white drop-shadow-2xl mb-4 tracking-tighter text-5xl mt-12">Sarthi Hotel</h1>
+<p class="font-noto-serif italic text-2xl md:text-3xl text-white/90 drop-shadow-lg">Authentic Maharashtrian Taste</p>
+<div class="mt-10 flex flex-col gap-4 items-center">
+<a class="bg-gradient-to-br from-primary to-primary-container text-on-primary px-10 py-4 rounded-full font-bold shadow-2xl scale-105 transition-transform duration-300" href="#menu">Explore Menu</a>
+</div>
+</div>
+</section>
+<!-- Menu Section (CRITICAL) -->
+<section class="px-6 max-w-6xl mx-auto py-8" id="menu">
+<div class="text-center mb-12">
+<h2 class="font-noto-serif text-4xl font-bold mb-2">Our Culinary Legacy</h2>
+<p class="text-on-surface-variant">Each dish is a secret recipe passed down through generations</p>
+</div>
+<!-- Search & Filters -->
+<div class="sticky top-16 z-40 bg-surface/90 backdrop-blur-xl -mx-6 px-6 mb-8 py-2">
+<div class="flex items-center bg-surface-container rounded-2xl px-4 py-3 mb-3 border border-outline-variant/30 focus-within:ring-2 focus-within:ring-primary/50">
+<span class="material-symbols-outlined text-outline">search</span>
+<input id="menu-search" class="bg-transparent border-none focus:ring-0 w-full text-on-surface font-body px-3" placeholder="Search for your favorite dish..." type="text"/>
+</div>
+<div id="category-filters" class="flex gap-4 overflow-x-auto no-scrollbar pb-2">
+    <!-- JS Injected Filters -->
+</div>
+</div>
+
+<div id="menu-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-16">
+    <!-- JS Injected Menu Cards -->
+    <div class="col-span-full text-center py-10 text-primary">
+        Loading our exquisite menu...
+    </div>
+</div>
+
+<div id="no-results" class="hidden text-center py-12 text-on-surface-variant">
+    <p class="text-xl font-bold">No dishes found matching your search.</p>
+</div>
+
+</section>
+<!-- Gallery Section -->
+<section class="py-16 px-6">
+<h2 class="font-noto-serif text-4xl font-bold text-center mb-12">The Grandeur</h2>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-6xl mx-auto">
+<div class="col-span-2 row-span-2 rounded-2xl overflow-hidden shadow-xl">
+<img alt="Sarthi Hotel Interior Entrance" class="w-full h-full object-cover" src="./assets/gallery-1.jpg"/>
+</div>
+<div class="rounded-2xl overflow-hidden shadow-xl aspect-square">
+<img alt="Sarthi Hotel Dining Area" class="w-full h-full object-cover" src="./assets/gallery-2.jpg"/>
+</div>
+<div class="rounded-2xl overflow-hidden shadow-xl aspect-square">
+<img alt="Sarthi Hotel Water Feature" class="w-full h-full object-cover" src="./assets/gallery-3.jpg"/>
+</div>
+<div class="col-span-2 rounded-2xl overflow-hidden shadow-xl h-48">
+<img alt="Sarthi Hotel Krishna Arjuna Mural" class="w-full h-full object-cover" src="./assets/gallery-4.jpg"/>
+</div>
+</div>
+</section>
+<!-- Reservation Section -->
+<section class="py-16 bg-surface-container-low px-6" id="reservation">
+<div class="max-w-4xl mx-auto">
+<div class="grid md:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="font-noto-serif text-4xl font-bold mb-4">Reserve Your Table</h2>
+<p class="text-on-surface-variant mb-8">Skip the queue and secure your regal dining experience at Sarthi. For parties larger than 10, please use the catering inquiry below.</p>
+<div class="space-y-4">
+<div class="flex items-center gap-4 p-4 bg-surface rounded-2xl shadow-sm border border-outline-variant/20">
+<span class="material-symbols-outlined text-primary">call</span>
+<div>
+<p class="text-[10px] uppercase font-bold tracking-widest text-outline">Call for Instant Booking</p>
+<p class="font-noto-serif text-lg font-bold">+91 98765 43210</p>
+</div>
+</div>
+</div>
+</div>
+<form id="reservation-form" class="bg-surface-container-lowest p-8 rounded-2xl shadow-2xl border border-outline-variant/10">
+<div class="space-y-4">
+<input id="res-name" class="w-full bg-surface-container border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/30" placeholder="Your Name" type="text" required/>
+<input id="res-phone" class="w-full bg-surface-container border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/30" placeholder="Phone Number" type="tel" required/>
+<div class="grid grid-cols-2 gap-4">
+<input id="res-date" class="bg-surface-container border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/30" type="date" required/>
+<input id="res-time" class="bg-surface-container border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/30" type="time" required/>
+</div>
+<select id="res-guests" class="w-full bg-surface-container border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/30" required>
+<option value="2 Guests">2 Guests</option>
+<option value="4 Guests">4 Guests</option>
+<option value="6 Guests">6 Guests</option>
+<option value="8+ Guests">8+ Guests</option>
+</select>
+<button class="w-full flex items-center justify-center gap-3 bg-[#25D366] text-white py-4 rounded-full font-bold uppercase tracking-widest shadow-lg hover:bg-green-600 transition-colors" type="submit">
+<span class="material-symbols-outlined">message</span> Book via WhatsApp
+</button>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- Contact Section -->
+<section class="px-4 sm:px-6 max-w-6xl mx-auto mb-8" id="contact">
+<div class="bg-surface-container rounded-3xl overflow-hidden shadow-2xl">
+<!-- Map on top for mobile, side for desktop -->
+<div class="flex flex-col md:flex-row">
+<div class="p-6 sm:p-10 md:w-1/2 order-2 md:order-1">
+<h2 class="font-noto-serif text-3xl sm:text-4xl font-bold mb-6 sm:mb-8">Visit Us</h2>
+<div class="space-y-5">
+<!-- Address -->
+<a href="https://maps.app.goo.gl/Avq4CDsJHnLWPso19" target="_blank" rel="noopener noreferrer" class="flex gap-4 items-start group hover:bg-surface-variant/50 p-3 -m-3 rounded-xl transition-colors">
+<span class="material-symbols-outlined text-primary mt-0.5">location_on</span>
+<div>
+<p class="font-bold">Address</p>
+<p class="text-on-surface-variant text-sm sm:text-base">1st Floor Mirajkar Tikti, Mangawar Peth, Kolhapur 416012</p>
+<p class="text-primary text-xs font-bold mt-1 opacity-0 group-hover:opacity-100 transition-opacity">Open in Maps →</p>
+</div>
+</a>
+<!-- Hours -->
+<div class="flex gap-4 items-start p-3 -m-3">
+<span class="material-symbols-outlined text-primary mt-0.5">schedule</span>
+<div>
+<p class="font-bold">Dining Hours</p>
+<p class="text-on-surface-variant text-sm sm:text-base">Lunch: 11:00 AM – 03:00 PM</p>
+<p class="text-on-surface-variant text-sm sm:text-base">Dinner: 07:00 PM – 11:00 PM</p>
+</div>
+</div>
+<!-- Phone -->
+<a href="tel:+919876543210" class="flex gap-4 items-start group hover:bg-surface-variant/50 p-3 -m-3 rounded-xl transition-colors">
+<span class="material-symbols-outlined text-primary mt-0.5">call</span>
+<div>
+<p class="font-bold">Call Us</p>
+<p class="text-on-surface-variant text-sm sm:text-base">+91 98765 43210</p>
+</div>
+</a>
+</div>
+<!-- Social Buttons -->
+<div class="mt-8 flex flex-wrap gap-3">
+<a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-[#25D366] text-white px-5 py-3 rounded-full font-bold text-sm shadow-md hover:shadow-lg hover:scale-105 transition-all">
+<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.748-2.874-2.512-2.96-2.626-.088-.113-.716-.953-.716-1.819 0-.866.454-1.292.614-1.457.16-.165.352-.206.468-.206h.334c.106 0 .245-.04.383.297.144.35.49 1.197.532 1.28.043.083.07.18.013.297-.057.116-.086.19-.171.297-.086.108-.181.24-.259.323-.086.09-.177.188-.076.36.101.171.447.737.959 1.193.658.587 1.214.769 1.385.855.171.086.273.072.373-.043.101-.115.432-.505.548-.678.115-.172.23-.144.388-.086.158.058 1.008.475 1.181.562.171.086.287.129.33.201.043.072.043.418-.101.823z"/></svg>
+WhatsApp
+</a>
+<a href="https://www.instagram.com/hotel__sarthi?igsh=MXVuZDB2c2I0aTkwdQ==" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-gradient-to-br from-[#833AB4] via-[#FD1D1D] to-[#F77737] text-white px-5 py-3 rounded-full font-bold text-sm shadow-md hover:shadow-lg hover:scale-105 transition-all">
+<svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+Instagram
+</a>
+<a href="https://maps.app.goo.gl/Avq4CDsJHnLWPso19" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 bg-primary text-on-primary px-5 py-3 rounded-full font-bold text-sm shadow-md hover:shadow-lg hover:scale-105 transition-all">
+<span class="material-symbols-outlined text-base">directions</span>
+Directions
+</a>
+</div>
+</div>
+<!-- Map -->
+<div class="md:w-1/2 h-64 sm:h-80 md:h-auto bg-stone-200 min-h-[260px] md:min-h-[420px] relative order-1 md:order-2">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3821.8!2d74.22!3d16.7!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTbCsDQyJzAwLjAiTiA3NMKwMTMnMTIuMCJF!5e0!3m2!1sen!2sin!4v1" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="absolute inset-0 w-full h-full"></iframe>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- BottomNavBar -->
+<nav class="fixed bottom-0 left-0 w-full flex justify-around items-center px-4 py-3 pb-safe bg-[#fefccf]/80 dark:bg-stone-900/80 backdrop-blur-2xl rounded-t-[1.5rem] z-50 shadow-[0px_-10px_30px_rgba(29,29,3,0.06)]">
+<a class="flex flex-col items-center justify-center bg-gradient-to-br from-[#735c00] to-[#d4af37] text-white rounded-full px-5 py-1.5 transition-all" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="font-manrope text-[10px] font-bold uppercase tracking-widest mt-1">Home</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1d1d03]/70 dark:text-stone-400 px-5 py-1.5 hover:text-[#735c00] transition-all" href="#menu">
+<span class="material-symbols-outlined">restaurant_menu</span>
+<span class="font-manrope text-[10px] font-bold uppercase tracking-widest mt-1">Menu</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1d1d03]/70 dark:text-stone-400 px-5 py-1.5 hover:text-[#735c00] transition-all" href="#reservation">
+<span class="material-symbols-outlined">event_available</span>
+<span class="font-manrope text-[10px] font-bold uppercase tracking-widest mt-1">Reserve</span>
+</a>
+<a class="flex flex-col items-center justify-center text-[#1d1d03]/70 dark:text-stone-400 px-5 py-1.5 hover:text-[#735c00] transition-all" href="#contact">
+<span class="material-symbols-outlined">contact_support</span>
+<span class="font-manrope text-[10px] font-bold uppercase tracking-widest mt-1">Contact</span>
+</a>
+</nav>
+<!-- Floating Action Button (FAB) -->
+<div class="fixed bottom-24 right-6 z-40">
+<a href="https://wa.me/919876543210" target="_blank" rel="noopener noreferrer" class="bg-[#25D366] text-white w-14 h-14 rounded-full shadow-2xl flex items-center justify-center transform hover:scale-105 active:scale-95 transition-all group">
+<svg class="w-8 h-8 fill-current" viewbox="0 0 24 24">
+<path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766 0-3.18-2.587-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.748-2.874-2.512-2.96-2.626-.088-.113-.716-.953-.716-1.819 0-.866.454-1.292.614-1.457.16-.165.352-.206.468-.206h.334c.106 0 .245-.04.383.297.144.35.49 1.197.532 1.28.043.083.07.18.013.297-.057.116-.086.19-.171.297-.086.108-.181.24-.259.323-.086.09-.177.188-.076.36.101.171.447.737.959 1.193.658.587 1.214.769 1.385.855.171.086.273.072.373-.043.101-.115.432-.505.548-.678.115-.172.23-.144.388-.086.158.058 1.008.475 1.181.562.171.086.287.129.33.201.043.072.043.418-.101.823z"></path>
+</svg>
+<span class="absolute right-full mr-4 bg-white text-gray-800 px-3 py-1 rounded shadow-md text-sm font-medium whitespace-nowrap opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none">Chat with us</span>
+</a>
+</div>
+
+<script src="script.js"></script>
+</body></html>
