@@ -221,8 +221,14 @@
 <input id="res-name" class="w-full bg-surface-container border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/30" placeholder="Your Name" type="text" required/>
 <input id="res-phone" class="w-full bg-surface-container border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/30" placeholder="Phone Number" type="tel" required/>
 <div class="grid grid-cols-2 gap-4">
-<input id="res-date" class="bg-surface-container border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/30" type="date" required/>
-<input id="res-time" class="bg-surface-container border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/30" type="time" required/>
+<div>
+<label for="res-date" class="block text-xs font-bold text-on-surface-variant mb-1 pl-1">Date</label>
+<input id="res-date" class="w-full bg-surface-container border border-outline-variant/30 rounded-xl p-4 focus:ring-2 focus:ring-primary/30 text-on-surface min-h-[56px]" type="date" required style="color-scheme: light;"/>
+</div>
+<div>
+<label for="res-time" class="block text-xs font-bold text-on-surface-variant mb-1 pl-1">Time</label>
+<input id="res-time" class="w-full bg-surface-container border border-outline-variant/30 rounded-xl p-4 focus:ring-2 focus:ring-primary/30 text-on-surface min-h-[56px]" type="time" required style="color-scheme: light;"/>
+</div>
 </div>
 <select id="res-guests" class="w-full bg-surface-container border-none rounded-xl p-4 focus:ring-2 focus:ring-primary/30" required>
 <option value="2 Guests">2 Guests</option>
